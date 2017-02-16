@@ -1,0 +1,201 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:wemos_mini
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L WeMos_mini U?
+U 1 1 58A1D0E8
+P 3150 3750
+F 0 "U?" H 3150 4250 60  0000 C CNN
+F 1 "WeMos_mini" H 3150 3250 60  0000 C CNN
+F 2 "" H 3700 3050 60  0000 C CNN
+F 3 "" H 3700 3050 60  0000 C CNN
+	1    3150 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 3500 2650 3500
+Wire Wire Line
+	2650 3400 2400 3400
+Wire Wire Line
+	3650 3400 4000 3400
+Wire Wire Line
+	3650 3600 7000 3600
+$Comp
+L +5V #PWR?
+U 1 1 58A1D261
+P 2400 3400
+F 0 "#PWR?" H 2400 3250 50  0001 C CNN
+F 1 "+5V" H 2400 3540 50  0000 C CNN
+F 2 "" H 2400 3400 50  0000 C CNN
+F 3 "" H 2400 3400 50  0000 C CNN
+	1    2400 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 58A1D2A6
+P 2400 3500
+F 0 "#PWR?" H 2400 3250 50  0001 C CNN
+F 1 "GND" H 2400 3350 50  0000 C CNN
+F 2 "" H 2400 3500 50  0000 C CNN
+F 3 "" H 2400 3500 50  0000 C CNN
+	1    2400 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L +3.3V #PWR?
+U 1 1 58A1D2BC
+P 4000 3400
+F 0 "#PWR?" H 4000 3250 50  0001 C CNN
+F 1 "+3.3V" H 4000 3540 50  0000 C CNN
+F 2 "" H 4000 3400 50  0000 C CNN
+F 3 "" H 4000 3400 50  0000 C CNN
+	1    4000 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L LTV-817 U?
+U 1 1 58A1D32C
+P 5350 2700
+F 0 "U?" H 5150 2900 50  0000 L CNN
+F 1 "SFH620A" H 5350 2900 50  0000 L CNN
+F 2 "DIP-4" H 5150 2500 50  0000 L CIN
+F 3 "" H 5350 2600 50  0000 L CNN
+	1    5350 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 58A1D9A3
+P 4450 2800
+F 0 "R?" V 4530 2800 50  0000 C CNN
+F 1 "R" V 4450 2800 50  0000 C CNN
+F 2 "" V 4380 2800 50  0000 C CNN
+F 3 "" H 4450 2800 50  0000 C CNN
+	1    4450 2800
+	0    1    1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 58A1DA90
+P 6050 1250
+F 0 "R?" V 6130 1250 50  0000 C CNN
+F 1 "R" V 6050 1250 50  0000 C CNN
+F 2 "" V 5980 1250 50  0000 C CNN
+F 3 "" H 6050 1250 50  0000 C CNN
+	1    6050 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D?
+U 1 1 58A1DB2F
+P 6050 1850
+F 0 "D?" H 6050 1950 50  0000 C CNN
+F 1 "LED" H 6050 1750 50  0000 C CNN
+F 2 "" H 6050 1850 50  0000 C CNN
+F 3 "" H 6050 1850 50  0000 C CNN
+	1    6050 1850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5650 2600 7000 2600
+Wire Wire Line
+	6050 2600 6050 2050
+Wire Wire Line
+	6050 1650 6050 1400
+$Comp
+L BARREL_JACK CON?
+U 1 1 58A1E296
+P 3250 1150
+F 0 "CON?" H 3250 1400 50  0000 C CNN
+F 1 "BARREL_JACK" H 3250 950 50  0000 C CNN
+F 2 "" H 3250 1150 50  0000 C CNN
+F 3 "" H 3250 1150 50  0000 C CNN
+	1    3250 1150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3150 1450 3150 2800
+Wire Wire Line
+	3150 2800 4300 2800
+Wire Wire Line
+	4600 2800 5050 2800
+Wire Wire Line
+	3350 1450 3350 2600
+Wire Wire Line
+	3350 2600 5050 2600
+Wire Wire Line
+	3250 1450 3150 1450
+Connection ~ 3150 1450
+$Comp
+L +3.3V #PWR?
+U 1 1 58A1E5A4
+P 6050 1100
+F 0 "#PWR?" H 6050 950 50  0001 C CNN
+F 1 "+3.3V" H 6050 1240 50  0000 C CNN
+F 2 "" H 6050 1100 50  0000 C CNN
+F 3 "" H 6050 1100 50  0000 C CNN
+	1    6050 1100
+	1    0    0    -1  
+$EndComp
+Connection ~ 6050 2600
+Wire Wire Line
+	5650 2800 6050 2800
+Wire Wire Line
+	6050 2800 6050 3050
+$Comp
+L GND #PWR?
+U 1 1 58A1E6A9
+P 6050 3050
+F 0 "#PWR?" H 6050 2800 50  0001 C CNN
+F 1 "GND" H 6050 2900 50  0000 C CNN
+F 2 "" H 6050 3050 50  0000 C CNN
+F 3 "" H 6050 3050 50  0000 C CNN
+	1    6050 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 2600 7000 3600
+$EndSCHEMATC
